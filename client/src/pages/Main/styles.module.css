@@ -1,0 +1,15 @@
+.films {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+}
+
+.search {
+  width: 400px;
+  padding-left: 2.5rem;
+  background: url("../../img/search.svg") no-repeat left, var(--bg-white);
+  background-size: 1rem;
+  background-position-x: 1rem;
+}

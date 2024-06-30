@@ -1,0 +1,24 @@
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-family: Inter;
+  font-size: 0.875rem;
+}
+
+.input {
+  width: 300px;
+  position: relative;
+  font-family: Inter;
+  padding: 0.75rem;
+  border: 1px solid var(--inp-border);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.input:focus {
+  border: 1px solid var(--btn-orange);
+}

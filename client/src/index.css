@@ -1,0 +1,41 @@
+:root {
+  font-family: Roboto;
+  font-size: 16px;
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+
+  --bg-main: #EDEDED;
+  --bg-header: #333333;
+  --bg-white: #FFFFFF;
+  --bg-overlay: #00000080;
+  --bg-select: #FAFAFA;
+  --text-white: #FFFFFF;
+  --text-black: #000000;
+  --text-primary: #1B1F23;
+  --text-secondary: #ABABAB;
+  --text-placeholder: #999FA6;
+  --btn-orange: #FF5500;
+  --btn-orange-hover: #E94E00;
+  --inp-border: #E1E3E6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, #root {
+  /* height: 100vh; */
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}

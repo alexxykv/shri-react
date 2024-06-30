@@ -1,0 +1,27 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  font-family: Roboto;
+  font-size: 0.875rem;
+}
+
+.button_primary {
+  color: var(--text-white);
+  background-color: var(--btn-orange);
+}
+
+.button_primary:hover {
+  background-color: var(--btn-orange-hover);
+}
+
+.button_secondary {
+  color: var(--btn-orange);
+  border: 1px solid var(--btn-orange);
+  background-color: transparent;
+}
+
+.button_secondary:hover {
+  color: var(--btn-orange-hover);
+  border: 1px solid var(--btn-orange-hover);
+}
