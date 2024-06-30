@@ -13,3 +13,22 @@
   background-size: 1rem;
   background-position-x: 1rem;
 }
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btn_page {
+  background-color: var(--bg-white);
+  padding: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 0 #0000004d;
+}
+
+.btn_page:disabled {
+  background-color: #E9EAED;
+  opacity: 0.6;
+  cursor: default;
+}
