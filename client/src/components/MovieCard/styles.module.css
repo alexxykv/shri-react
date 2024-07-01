@@ -4,11 +4,13 @@
   background-color: var(--bg-white);
   border-radius: 0.5rem;
   padding: 1.5rem;
+  gap: 1.5rem;
 }
 
 .poster {
-  width: 100px;
+  min-width: 100px;
   height: 120px;
+  border-radius: 0.5rem;
 }
 
 .content {

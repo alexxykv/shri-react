@@ -9,9 +9,7 @@ interface MovieCardProps {
 const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   return (
     <div className={styles.movie}>
-      {/* <div className={styles.poster}>
-
-      </div> */}
+      <img className={styles.poster} src={movie.poster} />
       <div className={styles.content}>
         <h3 className={styles.title}>{movie.title}</h3>
         <div style={{
@@ -44,7 +42,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
 
       </div>
       <div className={styles.rating}>
-
+        {movie.rating}
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ export interface Movie {
   description: string;
   rating: string;
   genre: string;
+  poster: string;
   release_year: string;
 }
 
@@ -42,11 +43,6 @@ export const getMovies: AsyncThunk<SearchType, Params, object> = createAsyncThun
   return response.data;
 });
 
-// export const getMovieById = createAsyncThunk('movies/getMovieById', async (id: string) => {
-//   const response = await axios.get(`http:localhost:3030/api/v1/movie/${id}`);
-//   return response.data;
-// });
-
 const movieSlice = createSlice({
   name: 'movies',
   initialState,
@@ -64,17 +60,6 @@ const movieSlice = createSlice({
         state.status = 'failed';
         state.error = true;
       })
-    // .addCase(getMovieById.pending, (state) => {
-    //   state.status = 'loading';
-    // })
-    // .addCase(getMovieById.fulfilled, (state, action) => {
-    //   state.status = 'succeeded';
-    //   state.film = action.payload;
-    // })
-    // .addCase(getMovieById.rejected, (state, action) => {
-    //   state.status = 'failed';
-    //   state.error = action.error.message || 'Failed to fetch film';
-    // });
   }
 });
 
